@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Copyright © Magento, Inc. All rights reserved.
+ * See COPYING.txt for license details.
+ */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <!--<move element="header.links" destination="header-wrapper" before="minicart" />-->
+
+
+
+        <!--<referenceContainer name="header.panel">-->
+            <!--<block class="Magento\Cms\Block\Block" name="top-tab">-->
+                <!--<arguments>-->
+                    <!--<argument name="block_id" xsi:type="string">top-tab</argument>-->
+                <!--</arguments>-->
+            <!--</block>-->
+        <!--</referenceContainer>-->
+        <!--<referenceContainer name="header.panel">-->
+            <!--<block class="Magento\Cms\Block\Block" name="header-top-promo-message">-->
+                <!--<arguments>-->
+                    <!--<argument name="block_id" xsi:type="string">header-top-promo-message</argument>-->
+                <!--</arguments>-->
+            <!--</block>-->
+        <!--</referenceContainer>-->
+        <!--<referenceBlock name="footer_links" remove="true" />-->
+        <!--<referenceBlock name="form.subscribe" remove="true"/>-->
+        <!--<referenceBlock name="copyright" remove="true"/>-->
+        <!--<referenceContainer name="footer">-->
+            <!--<block class="Magento\Cms\Block\Block" name="cmslinks_footer_links">-->
+                <!--<arguments>-->
+                    <!--<argument name="block_id" xsi:type="string">footer_links_block</argument>-->
+                <!--</arguments>-->
+            <!--</block>-->
+        <!--</referenceContainer>-->
+
+        <!--<referenceContainer name="catalog.topnav">-->
+            <!--<block class="Magento\Cms\Block\Block" name="header.top.menu" after="-"> &lt;!&ndash;Where header.top.menu - block name (optional)&ndash;&gt;-->
+                <!--<arguments>-->
+                    <!--<argument name="block_id" xsi:type="string">mobile_menu_links</argument> &lt;!&ndash;Where header_menu - CMS block identifier, that you will create in the admin panel &ndash;&gt;-->
+                <!--</arguments>-->
+            <!--</block>-->
+        <!--</referenceContainer>-->
+		<!--<referenceBlock name="catalog.compare.sidebar" remove="true"/>-->
+		<!--<referenceBlock name="catalog.compare.link" remove="true"/>-->
+		<!--<referenceBlock name="catalogsearch.product.addto.compare" remove="true"/>-->
+		<!--<referenceBlock name="category.product.addto.compare" remove="true"/>-->
+		<!--<referenceBlock name="view.addto.compare" remove="true"/>-->
+		<!--<referenceBlock name="crosssell.product.addto.compare" remove="true"/>-->
+		<!--<referenceBlock name="related.product.addto.compare" remove="true"/>-->
+		<!--<referenceBlock name="upsell.product.addto.compare" remove="true"/>-->
+
+    </body>
+</page>

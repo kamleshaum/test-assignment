@@ -1,0 +1,230 @@
+// KAMLESH YADUWANSHI
+.navigation .level0 > .level-top {
+  font-size: 14px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: #000;
+}
+.minicart-wrapper .action.showcart:before,
+.minicart-wrapper .action.showcart.active:before{
+  content: '';
+}
+
+.minicart-wrapper .action.showcart{
+  background:url('@{baseDir}images/icon-bag.svg') no-repeat;
+  width: 24px;
+  height: 15px;
+}
+
+.minicart-wrapper .action.showcart .counter-number {
+  text-shadow: unset;
+}
+.minicart-wrapper .action.showcart .counter.qty {
+  background: none;
+  color: #000; font-size: 10px;
+  padding: 0; margin: -5px 0 0 0;
+}
+#search-btn {
+  text-align: right;
+  a {
+    display: inline-block;
+    background: url("../images/search.svg") no-repeat;
+    width: 22px; height: 23px;
+    color: transparent;
+  }
+}
+#custom-search {
+  margin-top: 8px;
+}
+.block-search input::placeholder {
+  font-weight: normal;
+  font-size: 12px;
+}
+.box-tocart .action.tocart {
+  width: 100%;
+  background: #000;
+  border-radius: 100px;
+  border: none;
+  font-size: 14px; font-weight: 400; text-transform: uppercase;
+  span {
+    background: url('../images/right.svg') right no-repeat;
+    padding-right: 25px;
+  }
+}
+.product-options-bottom .price-box .price-container .price, .product-info-price .price-box .price-container .price {
+  font-size: 14px; font-weight: 700; color: #000;
+}
+.swatch-option.text {
+  min-width: 78px;
+  border-radius: 100px;
+  border: 1px solid #E5E5E5;
+}
+.swatch-attribute.size .swatch-option, .swatch-attribute.manufacturer .swatch-option {
+  background: none;
+  font-size: 14px; font-weight: 400;
+}
+.swatch-attribute.size .swatch-option.selected, .swatch-attribute.manufacturer .swatch-option.selected {
+  background: #000;
+  color: #fff;
+  outline: none; border: 1px solid transparent;
+  box-shadow: unset;
+}
+.product-info-main .box-tocart .control .qty {
+  margin: 0 !important;
+}
+.swatch-attribute-selected-option {
+  font-size: 14px; font-weight: 400; color: #000;
+  text-transform: uppercase;
+}
+.swatch-attribute-label {
+  color: #000;
+  text-transform: uppercase;
+}
+.product.media {
+  position: relative;
+}
+.product.media a.action.towishlist {
+  width: 20px; height: 18px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  z-index: 1;
+  background: url('../images/wishlist.svg') top right no-repeat;
+  color: transparent;
+}
+
+@media (max-width: 768px) {
+  .block-search input {
+    position: static;
+  }
+  .block-search .label {
+    display: none;
+  }
+}
+
+@media (min-width: 769px) {
+  .block-search .action.search {
+    top: 30px;
+  }
+  .block-search .action.search:before,
+  .block-search .action.search:hover:before {
+    color: #000 !important;
+  }
+  .header.panel > .header.links {
+    width: 24px;
+  }
+  .header.panel > .header.links > li.customer-welcome button{
+    background: url("../images/account.svg") top right no-repeat;
+    width: 24px;
+    height: 24px;
+  }
+
+  .page-header .panel.wrapper {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    float: right;
+    z-index: 9;
+    background: none; border: none;
+  }
+  .page-header {
+    position: relative;
+    width: 100%;
+    max-width: 1440px; margin: 0 auto;
+  }
+  .navigation .level0 .submenu a {
+    font-weight: normal; color: #000;
+  }
+  .nav-sections {
+    margin: 0 auto;
+    position: absolute;
+    left: 45%;
+    top: 0;
+    transform: translate(-45%, 0);
+    width: 100%;
+    max-width: 930px;
+    z-index: 99;
+  }
+  .header.content {
+    padding: 25px 0 0;
+  }
+
+  .header.panel > .header.links > li > a {
+    color: #000;
+  }
+  .header.panel > .header.links > li > a{
+    &:visited {
+      color: #000;
+    }
+  }
+  .header.panel > .header.links > li {
+    &.link.authorization-link {
+      display: block;
+      &:after {
+        content: '';
+      }
+      a {
+        text-align: right;
+        color: transparent;
+        background: url("../images/account.svg") top right no-repeat;
+        width: 24px;
+        height: 24px;
+      }
+    }
+  }
+  .header.panel > .header.links > .customer-welcome + .authorization-link {
+    display: none !important;
+  }
+  .header.panel > .header.links > .authorization-link + li{
+    display: none;
+  }
+  .customer-welcome .action.switch:after,
+  .customer-welcome.active .action.switch:after {
+    content: '';
+  }
+  li.greet.welcome {
+    width: 420px;
+    position: absolute;
+    right: 0;
+    top: -10px;
+    text-align: right;
+    span {
+      color: #000;
+      font-size: 11px;
+    }
+  }
+  .minicart-wrapper {
+    margin-right: 12px;
+  }
+
+  .page-layout-1column .product-info-main {
+    width: 30%; max-width: 324px;
+  }
+  .page-layout-1column .product.media {
+    width: 40%; max-width: 562px;
+    float: right; margin: 0 40px;
+  }
+  .product.info.detailed {
+    width: 30%;
+    clear: none;
+  }
+  .product.data.items > .item.title > .switch {
+      color: #767676;
+      text-transform: uppercase;
+      font-size: 14px; font-weight: 400;
+      padding-left: 0;
+      border: none;
+      background: none;
+  }
+  .product.data.items > .item.title:not(.disabled) > .switch:active, .product.data.items > .item.title.active > .switch, .product.data.items > .item.title.active > .switch:focus, .product.data.items > .item.title.active > .switch:hover {
+    color: #000;
+    font-weight: bold;
+  }
+  .product.data.items > .item.content {
+    border: none;
+    padding-left: 0;
+  }
+  .product-info-main .page-title-wrapper h1 {
+    font-size: 48px; font-weight: 400; color: #000;
+  }
+}

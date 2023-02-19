@@ -1,0 +1,48 @@
+// /**
+//  * Copyright © Magento, Inc. All rights reserved.
+//  * See COPYING.txt for license details.
+//  */
+
+//
+//  Luma theme overrides
+//  _____________________________________________
+
+//  Theme file should contain declarations (overrides) ONLY OF EXISTING variables
+//  Otherwise this theme won't be available for parent nesting
+//  All new variables should be placed in local theme lib or local theme files
+
+
+//
+// CUSTOM Variable
+// ---------------------------------
+
+//
+//  Typography
+//  ---------------------------------------------
+
+//  Fonts
+@icons__font-path: '@{baseDir}fonts/Luma-Icons';
+@icons__font-name: 'luma-icons';
+
+@font-family-name__base: 'Roboto', sans-serif;
+@font-family__base: @font-family-name__base, @font-family__sans-serif;
+
+@font-family-name__secondary:  'Roboto', sans-serif;
+@font-family__secondary: @font-family-name__secondary, @font-family__sans-serif;
+
+//
+//  Layout grid
+//  ---------------------------------------------
+@layout__max-width: 1440px;
+@layout-indent__width: 0;
+
+@total-columns: 24;
+
+//  Variables for layout columns
+@layout-column__sidebar-width: 5;
+
+//  Checkout columns width
+@layout-column-checkout__width-left: 6;
+
+@copyright__background-color: #ccc;
+@navigation__background: #fff;
